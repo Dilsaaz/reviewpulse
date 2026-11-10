@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research | ReviewPulse</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07111f;--panel:#0d1b2d;--line:#1d3047;--text:#f4f8ff;--muted:#9aacc2;--blue:#398cff;--cyan:#45d8e8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif}
+a{text-decoration:none;color:inherit}
+header{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 7%;position:sticky;top:0;background:#07111ff2;backdrop-filter:blur(14px);z-index:5}
+.logo{font-family:Manrope,sans-serif;font-size:23px;font-weight:800;letter-spacing:-1px}
+.logo span{color:var(--cyan)}
+nav{display:flex;gap:28px;color:var(--muted);font-size:14px}
+nav a:hover,nav a.active{color:var(--cyan)}
+.btn{padding:11px 20px;border-radius:30px;background:linear-gradient(100deg,var(--blue),#25b8d2);font-weight:700;font-size:13px;color:white}
+main{max-width:1120px;margin:auto;padding:65px 24px 90px}
+.eyebrow{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+h1,h2,h3{font-family:Manrope,sans-serif}
+h1{font-size:clamp(36px,6vw,58px);line-height:1.12;max-width:720px;margin:18px 0}
+h1 span{color:var(--cyan)}
+.intro{max-width:650px;color:var(--muted);line-height:1.8;font-size:16px}
+.notice{margin:30px 0 48px;padding:17px 20px;border:1px solid #28506c;background:#0b2132;border-radius:14px;color:#b9dce9;font-size:13px;line-height:1.7}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:50px 0 20px}
+.section-head h2{font-size:25px;margin:0}
+.section-head p{color:var(--muted);font-size:13px;margin:7px 0 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(145deg,#102138,#0b1727);border:1px solid var(--line);border-radius:18px;padding:25px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#347bb0}
+.symbol{width:46px;height:46px;border-radius:13px;background:#12334b;color:var(--cyan);display:grid;place-items:center;font-size:22px}
+.card h3{font-size:18px;margin:20px 0 9px}
+.card p{color:var(--muted);font-size:13px;line-height:1.8;margin:0}
+.tag{display:inline-block;margin-top:18px;padding:7px 11px;border-radius:20px;background:#172b40;color:#9fc9e6;font-size:11px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{padding:22px;border:1px solid var(--line);border-radius:16px}
+.num{font-size:12px;color:var(--cyan);font-weight:800;letter-spacing:1px}
+.step h3{font-size:16px;margin:12px 0 8px}
+.step p{font-size:13px;line-height:1.7;color:var(--muted)}
+.guideline{margin-top:45px;padding:28px;border:1px solid var(--line);border-radius:18px;background:#0c1a2b}
+.guideline h2{margin-top:0}
+.guideline li{color:var(--muted);line-height:2;font-size:14px}
+footer{border-top:1px solid var(--line);padding:28px 7%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+@media(max-width:760px){header{padding:0 5%;height:68px}nav{display:none}.grid,.steps{grid-template-columns:1fr}main{padding-top:45px}.section-head{align-items:start;flex-direction:column}footer{padding:25px 5%}}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="index.html">Review<span>Pulse</span></a>
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="research.html" class="active">Research</a>
+<a href="wallet.html">Wallet</a>
+<a href="leadership.html">Leadership</a>
+</nav>
+<a class="btn" href="dashboard.html">Member Area</a>
+</header>
+
+<main>
+<div class="eyebrow">Explore Research</div>
+<h1>Every opinion can create <span>meaningful insight.</span></h1>
+<p class="intro">Discover research areas where thoughtful responses, genuine experiences and structured feedback can help businesses better understand people and their needs.</p>
+
+<div class="notice">
+<strong>Research access preview</strong><br>
+This page currently displays sample research categories. Live projects, eligibility, participation terms and any compensation will be shown only after they are independently verified and officially made available.
+</div>
+
+<div class="section-head">
+<div><h2>Research Categories</h2><p>Explore the areas covered by ReviewPulse.</p></div>
+</div>
+
+<div class="grid">
+<div class="card">
+<div class="symbol">◈</div>
+<h3>Consumer Research</h3>
+<p>Understand customer preferences, shopping habits and everyday buying decisions through structured research.</p>
+<span class="tag">Consumer Insights</span>
+</div>
+<div class="card">
+<div class="symbol">✧</div>
+<h3>Product Feedback</h3>
+<p>Share honest feedback on product concepts, usability and user experiences in eligible research studies.</p>
+<span class="tag">Product Experience</span>
+</div>
+<div class="card">
+<div class="symbol">⌘</div>
+<h3>Business Insights</h3>
+<p>Explore business questions, service experiences and market perspectives through research activities.</p>
+<span class="tag">Market Research</span>
+</div>
+</div>
+
+<div class="section-head">
+<div><h2>How Research Works</h2><p>A transparent process from invitation to completion.</p></div>
+</div>
+
+<div class="steps">
+<div class="step">
+<div class="num">STEP 01</div>
+<h3>Explore a Project</h3>
+<p>Review the research purpose, eligibility requirements, privacy terms and participation instructions.</p>
+</div>
+<div class="step">
+<div class="num">STEP 02</div>
+<h3>Share Your Response</h3>
+<p>Provide thoughtful, truthful answers based on your actual experience. Never submit fabricated feedback.</p>
+</div>
+<div class="step">
+<div class="num">STEP 03</div>
+<h3>Review & Verification</h3>
+<p>Submitted research may be checked for completeness and quality according to the project's stated rules.</p>
+</div>
+</div>
+
+<div class="guideline">
+<h2>Our Research Principles</h2>
+<ul>
+<li>Honest opinions and genuine experiences only.</li>
+<li>No fabricated reviews, ratings or endorsements.</li>
+<li>Clear project instructions and eligibility criteria.</li>
+<li>Personal information should be handled according to the published privacy policy.</li>
+<li>No guaranteed income or guaranteed availability of research projects.</li>
+</ul>
+</div>
+</main>
+
+<footer>
+<span>© 2026 ReviewPulse. All rights reserved.</span>
+<span>Research. Insights. Impact.</span>
+<a href="index.html">Back to Home</a>
+</footer>
+</body>
+</html>
