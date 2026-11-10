@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Wallet | ReviewPulse</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#07111f;color:#f4f8ff;font-family:'DM Sans',sans-serif}
+a{color:inherit;text-decoration:none}
+header{height:75px;border-bottom:1px solid #1d3047;display:flex;align-items:center;justify-content:space-between;padding:0 7%;background:#07111f;position:sticky;top:0}
+.logo{font:800 23px Manrope;letter-spacing:-1px}.logo span{color:#45d8e8}
+nav{display:flex;gap:25px;color:#9aacc2;font-size:14px}
+nav a:hover,nav a.active{color:#45d8e8}
+main{max-width:1120px;margin:auto;padding:45px 24px 80px}
+.eyebrow{font-size:11px;letter-spacing:2px;color:#45d8e8;font-weight:700}
+h1,h2,h3{font-family:Manrope,sans-serif}
+h1{font-size:36px;margin:12px 0}
+.sub{color:#9aacc2;line-height:1.7;font-size:14px}
+.demo{margin:25px 0;padding:16px 19px;background:#10263a;border:1px solid #28506c;border-radius:13px;color:#b8ddec;font-size:13px;line-height:1.7}
+.balance{padding:32px;border-radius:22px;background:linear-gradient(120deg,#12518b,#123b67,#10263f);border:1px solid #2877aa;position:relative;overflow:hidden}
+.balance small{color:#d3eaff}
+.amount{font:800 48px Manrope;margin:12px 0}
+.currency{display:inline-block;padding:7px 12px;border-radius:30px;background:#ffffff1c;font-size:12px}
+.network{margin-top:23px;color:#d2e7fa;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:20px}
+.card{background:#0d1b2d;border:1px solid #1d3047;border-radius:17px;padding:22px}
+.card small{color:#9aacc2;font-size:12px}
+.card h2{font-size:25px;margin:12px 0 5px}
+.card p{font-size:12px;color:#8fa6be;margin:0}
+.section{margin-top:42px}
+.section h2{font-size:23px;margin-bottom:8px}
+.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.level{background:linear-gradient(145deg,#102138,#0b1727);border:1px solid #243d57;border-radius:17px;padding:23px}
+.level .capacity{font:800 29px Manrope;color:#45d8e8;margin:13px 0}
+.level p{font-size:12px;color:#9aacc2;line-height:1.7}
+.label{font-size:10px;color:#45d8e8;letter-spacing:1.4px;font-weight:700}
+.table{margin-top:18px;border:1px solid #1d3047;border-radius:15px;overflow:hidden}
+.item{display:flex;justify-content:space-between;gap:15px;padding:18px 20px;border-bottom:1px solid #1d3047;font-size:13px}
+.item:last-child{border:0}
+.item span:last-child{color:#9aacc2}
+footer{border-top:1px solid #1d3047;padding:25px 7%;color:#8195ad;font-size:12px}
+@media(max-width:700px){header{padding:0 5%}nav{display:none}main{padding:35px 18px 60px}.grid,.levels{grid-template-columns:1fr}.amount{font-size:39px}.item{font-size:12px}}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="index.html">Review<span>Pulse</span></a>
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="research.html">Research</a>
+<a class="active" href="wallet.html">Wallet</a>
+<a href="leadership.html">Leadership</a>
+</nav>
+<a href="dashboard.html">Member Area →</a>
+</header>
+
+<main>
+<div class="eyebrow">MEMBER FINANCIAL OVERVIEW</div>
+<h1>My Wallet</h1>
+<p class="sub">A transparent overview of wallet concepts, account activity and future capacity levels.</p>
+
+<div class="demo">
+<strong>Prototype Preview</strong><br>
+This is a non-functional demonstration. No funds are held, collected, transferred or withdrawable through this page. All figures below are illustrative, not actual balances or financial entitlements.
+</div>
+
+<div class="balance">
+<small>Illustrative Wallet Balance</small>
+<div class="amount">$0.00</div>
+<span class="currency">USDT · BEP20 preference</span>
+<div class="network">Network preference only · No blockchain connection</div>
+</div>
+
+<div class="grid">
+<div class="card">
+<small>Illustrative Deposits</small>
+<h2>$0.00</h2>
+<p>No deposits connected</p>
+</div>
+<div class="card">
+<small>Research Rewards</small>
+<h2>$0.00</h2>
+<p>No verified rewards recorded</p>
+</div>
+<div class="card">
+<small>Withdrawals</small>
+<h2>$0.00</h2>
+<p>No withdrawal facility enabled</p>
+</div>
+</div>
+
+<div class="section">
+<h2>Future Wallet Capacity Concept</h2>
+<p class="sub">Illustrative capacity milestones for future planning. These are not approved limits or guaranteed benefits.</p>
+<div class="levels">
+<div class="level">
+<div class="label">LEVEL 01</div>
+<h3>Foundation</h3>
+<div class="capacity">$500</div>
+<p>Example future capacity concept. Subject to eligibility, verification and applicable compliance requirements.</p>
+</div>
+<div class="level">
+<div class="label">LEVEL 02</div>
+<h3>Growth</h3>
+<div class="capacity">$1,000</div>
+<p>Example future capacity concept. Not an available balance or earning opportunity.</p>
+</div>
+<div class="level">
+<div class="label">LEVEL 03</div>
+<h3>Leadership</h3>
+<div class="capacity">$2,000</div>
+<p>Example future capacity concept. Any future implementation requires independent approval and verification.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Wallet Activity</h2>
+<p class="sub">Sample activity categories. No actual transactions are recorded.</p>
+<div class="table">
+<div class="item"><span>Wallet setup</span><span>Demo preview</span></div>
+<div class="item"><span>Research rewards</span><span>No activity</span></div>
+<div class="item"><span>Withdrawals</span><span>Not enabled</span></div>
+<div class="item"><span>Network</span><span>USDT · BEP20 preference</span></div>
+</div>
+</div>
+</main>
+
+<footer>© 2026 ReviewPulse · Research. Insights. Impact.</footer>
+</body>
+</html>
