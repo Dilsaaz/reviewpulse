@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member Login | ReviewPulse</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:24px;background:#07111f;color:#f4f8ff;
+  font-family:Arial,sans-serif;
+}
+.card{
+  width:100%;max-width:430px;padding:38px 30px;
+  background:#101f33;border:1px solid #243b58;
+  border-radius:22px;box-shadow:0 20px 60px #0006;
+}
+.logo{font-size:25px;font-weight:800;color:#45d9f5;margin-bottom:30px}
+h1{font-size:29px;margin-bottom:10px}
+.sub{color:#9eafc5;font-size:14px;line-height:1.6;margin-bottom:28px}
+label{display:block;font-size:13px;margin:18px 0 8px;color:#dce8f7}
+input{
+  width:100%;padding:14px;border-radius:10px;
+  border:1px solid #304761;background:#091727;
+  color:white;font-size:15px;outline:none;
+}
+input:focus{border-color:#42d9f5}
+button{
+  width:100%;margin-top:25px;padding:15px;border:0;
+  border-radius:10px;background:linear-gradient(100deg,#16b9dc,#3979f6);
+  color:white;font-size:16px;font-weight:700;cursor:pointer;
+}
+button:hover{opacity:.9}
+.message{margin-top:18px;color:#75dff2;font-size:13px;line-height:1.5}
+.links{text-align:center;margin-top:23px;font-size:13px;color:#9eafc5;line-height:2}
+a{color:#48d8f2;text-decoration:none}
+.back{display:block;text-align:center;margin-top:22px;color:#9eafc5;font-size:13px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">ReviewPulse.</div>
+  <h1>Welcome Back</h1>
+  <p class="sub">Sign in to access your ReviewPulse member experience.</p>
+
+  <form id="loginForm">
+    <label for="email">Email Address</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+
+    <label for="password">Password</label>
+    <input id="password" type="password" placeholder="Enter your password" required>
+
+    <button type="submit">Sign In</button>
+    <p class="message" id="message" role="status"></p>
+  </form>
+
+  <div class="links">
+    New to ReviewPulse? <a href="register.html">Create an account</a>
+  </div>
+  <a class="back" href="index.html">← Back to Homepage</a>
+</div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  document.getElementById("message").textContent =
+  "Login service is not connected yet. Secure account access will be enabled after backend setup.";
+});
+</script>
+</body>
+</html>
