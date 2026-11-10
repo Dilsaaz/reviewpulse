@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports | ReviewPulse</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#07111f;color:#f4f8ff;font-family:'DM Sans',sans-serif}
+a{text-decoration:none;color:inherit}
+header{height:75px;border-bottom:1px solid #1d3047;display:flex;align-items:center;justify-content:space-between;padding:0 7%;background:#07111f}
+.logo{font:800 23px Manrope;letter-spacing:-1px}.logo span{color:#45d8e8}
+nav{display:flex;gap:25px;color:#9aacc2;font-size:14px}
+nav a:hover,nav a.active{color:#45d8e8}
+main{max-width:1120px;margin:auto;padding:48px 24px 85px}
+.eyebrow{color:#45d8e8;font-size:11px;font-weight:700;letter-spacing:2px}
+h1,h2,h3{font-family:Manrope,sans-serif}
+h1{font-size:clamp(34px,5vw,48px);margin:14px 0}
+.sub{color:#9aacc2;line-height:1.8;font-size:14px;max-width:680px}
+.notice{margin:27px 0;padding:16px 20px;background:#10263a;border:1px solid #28506c;border-radius:14px;color:#b8ddec;font-size:13px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:25px}
+.card{background:#0d1b2d;border:1px solid #1d3047;border-radius:17px;padding:22px}
+.card small{color:#9aacc2;font-size:12px}
+.value{font:800 30px Manrope;margin:13px 0 5px}
+.card p{font-size:12px;color:#91a7be;margin:0}
+.section{margin-top:43px}
+.section h2{font-size:23px;margin-bottom:8px}
+.panel{background:#0d1b2d;border:1px solid #1d3047;border-radius:18px;padding:25px;margin-top:18px}
+.activity{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:17px 0;border-bottom:1px solid #1d3047;font-size:13px}
+.activity:last-child{border:0}
+.activity span:last-child{color:#9aacc2}
+.chart{height:170px;display:flex;align-items:end;gap:12px;padding:15px 5px 0}
+.column{flex:1;background:linear-gradient(#45d8e8,#2469a9);border-radius:7px 7px 2px 2px;opacity:.7}
+.labels{display:flex;justify-content:space-around;color:#8fa6be;font-size:11px;margin-top:12px}
+.empty{padding:25px;text-align:center;color:#9aacc2;font-size:13px;line-height:1.8;border:1px dashed #304761;border-radius:13px;margin-top:18px}
+footer{border-top:1px solid #1d3047;padding:25px 7%;color:#8195ad;font-size:12px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){header{padding:0 5%}nav{display:none}main{padding:35px 18px 60px}.grid{grid-template-columns:1fr 1fr}.value{font-size:25px}.activity{font-size:12px}}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="index.html">Review<span>Pulse</span></a>
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="research.html">Research</a>
+<a href="wallet.html">Wallet</a>
+<a href="leadership.html">Leadership</a>
+<a class="active" href="reports.html">Reports</a>
+</nav>
+<a href="dashboard.html">Member Area →</a>
+</header>
+
+<main>
+<div class="eyebrow">PERFORMANCE & ANALYTICS</div>
+<h1>Your progress, clearly presented.</h1>
+<p class="sub">A centralized view of research participation, contribution quality and activity summaries.</p>
+
+<div class="notice">
+<strong>Sample Analytics Preview</strong><br>
+All values on this page are demonstration placeholders. No actual member performance, client projects, payments or rewards are connected.
+</div>
+
+<div class="grid">
+<div class="card"><small>Completed Projects</small><div class="value">0</div><p>No verified projects yet</p></div>
+<div class="card"><small>Research Responses</small><div class="value">0</div><p>No submissions recorded</p></div>
+<div class="card"><small>Quality Score</small><div class="value">—</div><p>Awaiting verified activity</p></div>
+<div class="card"><small>Active Projects</small><div class="value">0</div><p>No active assignments</p></div>
+</div>
+
+<div class="section">
+<h2>Research Activity</h2>
+<p class="sub">A sample visual layout for future monthly reporting.</p>
+<div class="panel">
+<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+<strong>Monthly Activity Overview</strong>
+<span style="color:#45d8e8;font-size:12px">DEMO VIEW</span>
+</div>
+<div class="chart">
+<div class="column" style="height:8%"></div>
+<div class="column" style="height:8%"></div>
+<div class="column" style="height:8%"></div>
+<div class="column" style="height:8%"></div>
+<div class="column" style="height:8%"></div>
+<div class="column" style="height:8%"></div>
+</div>
+<div class="labels"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span></div>
+<p style="color:#8fa6be;font-size:11px;margin-top:18px">No activity data available. Bars are placeholders, not measured performance.</p>
+</div>
+</div>
+
+<div class="section">
+<h2>Recent Research Activity</h2>
+<p class="sub">Your verified research history will appear here when a real service is connected.</p>
+<div class="empty">No research activity available yet.<br>When eligible projects are completed and verified, their records can appear here.</div>
+</div>
+
+<div class="section">
+<h2>Report Categories</h2>
+<div class="grid">
+<div class="card"><small>Participation</small><div class="value">01</div><p>Project participation summary</p></div>
+<div class="card"><small>Quality</small><div class="value">02</div><p>Verified response quality</p></div>
+<div class="card"><small>Activity</small><div class="value">03</div><p>Monthly activity overview</p></div>
+<div class="card"><small>History</small><div class="value">04</div><p>Research history records</p></div>
+</div>
+</div>
+</main>
+
+<footer>© 2026 ReviewPulse · Research. Insights. Impact.</footer>
+</body>
+</html>
