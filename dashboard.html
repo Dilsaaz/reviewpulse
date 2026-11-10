@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+<title>Member Dashboard | ReviewPulse</title>
+<style>
+:root{
+ --bg:#07111f;--panel:#0e1d30;--panel2:#122741;
+ --blue:#279cf0;--cyan:#63d8ff;--white:#f5f9ff;
+ --muted:#91a7c1;--line:#263b54;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--white);font-family:Arial,sans-serif}
+a{text-decoration:none;color:inherit}
+.layout{display:flex;min-height:100vh}
+.sidebar{
+ width:245px;background:#091626;border-right:1px solid var(--line);
+ padding:28px 20px;flex-shrink:0
+}
+.logo{font-size:22px;font-weight:900;letter-spacing:1px;margin-bottom:38px}
+.logo span{color:var(--cyan)}
+.nav-label{font-size:10px;color:#69819e;letter-spacing:2px;margin:25px 10px 12px}
+.nav a{display:block;padding:13px 12px;border-radius:9px;
+ color:#a9bad0;font-size:14px;margin:5px 0}
+.nav a.active,.nav a:hover{background:#142b45;color:#65d5ff}
+.main{flex:1;min-width:0;padding:30px 4%;max-width:1500px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:30px}
+.top h1{font-size:26px}
+.top p{color:var(--muted);font-size:13px;margin-top:5px}
+.profile{background:#142b45;padding:10px 15px;border-radius:10px;font-size:13px}
+.notice{border:1px solid #315477;background:#102740;padding:14px 17px;
+ border-radius:10px;color:#b6d9f8;font-size:12px;margin-bottom:25px;line-height:1.6}
+.eyebrow{font-size:10px;letter-spacing:2px;color:var(--cyan);font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.card{background:linear-gradient(145deg,#11253d,#0c1a2b);
+ border:1px solid var(--line);border-radius:15px;padding:22px}
+.card h3{font-size:14px;color:#b4c7dd;font-weight:500;margin-bottom:14px}
+.big{font-size:29px;font-weight:800;letter-spacing:-1px}
+.muted{font-size:12px;color:var(--muted);margin-top:9px}
+.wallet{grid-column:span 2;background:
+ radial-gradient(ellipse at 90% 0%,#174b70,transparent 55%),#10243b}
+.wallet-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.tag{font-size:10px;color:#70e4bd;border:1px solid #287c65;
+ padding:6px 10px;border-radius:20px}
+.balance{font-size:37px;font-weight:800;margin:25px 0 5px}
+.rule{height:1px;background:var(--line);margin:20px 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.stats small{display:block;color:var(--muted);font-size:11px;margin-bottom:7px}
+.stats strong{font-size:16px}
+.level{font-size:23px;font-weight:800;margin:10px 0}
+.progress{height:7px;background:#20374e;border-radius:20px;overflow:hidden;margin:16px 0}
+.progress span{display:block;width:42%;height:100%;
+ background:linear-gradient(90deg,#218be6,#64d8ff);border-radius:20px}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:17px}
+.tier{padding:16px 12px;border:1px solid var(--line);
+ border-radius:11px;background:#0b1b2c}
+.tier strong{font-size:19px;display:block;margin:8px 0}
+.tier small{font-size:10px;color:var(--muted)}
+.status{font-size:10px;color:#f1c77c}
+.section{margin-top:28px}
+.section-title{font-size:18px;margin-bottom:15px}
+.activity{display:flex;justify-content:space-between;gap:15px;
+ padding:15px 0;border-bottom:1px solid var(--line);font-size:13px}
+.activity span:last-child{color:var(--muted);font-size:11px}
+footer{margin-top:35px;color:#6f86a1;font-size:11px}
+@media(max-width:850px){
+ .sidebar{width:190px}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .wallet{grid-column:span 2}
+}
+@media(max-width:600px){
+ .layout{display:block}
+ .sidebar{width:100%;padding:18px}
+ .logo{margin-bottom:14px}
+ .nav{display:flex;overflow-x:auto;gap:5px}
+ .nav-label{display:none}
+ .nav a{white-space:nowrap;padding:10px}
+ .main{padding:22px 17px}
+ .grid{grid-template-columns:1fr}
+ .wallet{grid-column:span 1}
+ .tiers{grid-template-columns:1fr}
+ .top h1{font-size:21px}
+ .balance{font-size:31px}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+ <div class="logo">REVIEW<span>PULSE</span></div>
+ <div class="nav-label">MEMBER WORKSPACE</div>
+ <nav class="nav">
+  <a class="active" href="#overview">▦ Overview</a>
+  <a href="#wallet">◈ My Wallet</a>
+  <a href="#leadership">♛ Leadership</a>
+  <a href="#research">◎ Research</a>
+  <a href="#reports">▤ Reports</a>
+  <a href="index.html">↗ Main Website</a>
+ </nav>
+</aside>
+
+<main class="main" id="overview">
+ <div class="top">
+  <div>
+   <div class="eyebrow">MEMBER WORKSPACE</div>
+   <h1>Dashboard Overview</h1>
+   <p>Welcome to your ReviewPulse workspace.</p>
+  </div>
+  <div class="profile">Member Preview</div>
+ </div>
+
+ <div class="notice">
+  <strong>DEMO PREVIEW</strong> — This is a non-functional dashboard concept.
+  No real accounts, wallet funds, deposits, transfers or withdrawals are connected.
+ </div>
+
+ <div class="grid">
+  <div class="card">
+   <h3>Membership Status</h3>
+   <div class="big">Preview</div>
+   <div class="muted">Account activation pending</div>
+  </div>
+  <div class="card">
+   <h3>Leadership Level</h3>
+   <div class="big">Starter</div>
+   <div class="muted">Illustrative level only</div>
+  </div>
+  <div class="card">
+   <h3>Verified Contributions</h3>
+   <div class="big">0</div>
+   <div class="muted">Sample dashboard data</div>
+  </div>
+
+  <div class="card wallet" id="wallet">
+   <div class="wallet-top">
+    <div>
+     <div class="eyebrow">REVIEWPULSE WALLET</div>
+     <h2 style="font-size:19px;margin-top:8px">Digital Asset Overview</h2>
+    </div>
+    <span class="tag">USDT · BEP20</span>
+   </div>
+   <div class="balance">$0.00</div>
+   <div class="muted">Illustrative available balance · USDT</div>
+   <div class="rule"></div>
+   <div class="stats">
+    <div><small>Deposits</small><strong>$0.00</strong></div>
+    <div><small>Research Rewards</small><strong>$0.00</strong></div>
+    <div><small>Withdrawals</small><strong>$0.00</strong></div>
+   </div>
+   <div class="muted">Network preference preview only. No blockchain connection.</div>
+  </div>
+
+  <div class="card" id="leadership">
+   <div class="eyebrow">LEADERSHIP JOURNEY</div>
+   <h2 class="level">Starter Level</h2>
+   <div class="muted">Progress will be based on verified research contribution and responsible team leadership.</div>
+   <div class="progress"><span></span></div>
+   <div class="muted">Sample progress indicator — not an actual qualification.</div>
+  </div>
+ </div>
+
+ <section class="section">
+  <div class="eyebrow">FUTURE WALLET CAPACITY</div>
+  <h2 class="section-title">Capacity Preview</h2>
+  <p class="muted">Illustrative display limits only. These are not deposit requirements, investment plans or guaranteed benefits.</p>
+  <div class="tiers">
+   <div class="tier">
+    <small>LEVEL 01 · PREVIEW</small>
+    <strong>$500</strong>
+    <span class="status">Future capacity concept</span>
+   </div>
+   <div class="tier">
+    <small>LEVEL 02 · PREVIEW</small>
+    <strong>$1,000</strong>
+    <span class="status">Future capacity concept</span>
+   </div>
+   <div class="tier">
+    <small>LEVEL 03 · PREVIEW</small>
+    <strong>$2,000</strong>
+    <span class="status">Future capacity concept</span>
+   </div>
+  </div>
+ </section>
+
+ <section class="section" id="research">
+  <div class="eyebrow">PARTICIPATION</div>
+  <h2 class="section-title">Research Opportunities</h2>
+  <div class="card">
+   <h3>No active opportunities</h3>
+   <p class="muted">Eligible research activities will appear here when available.</p>
+  </div>
+ </section>
+
+ <section class="section" id="reports">
+  <div class="eyebrow">PERFORMANCE</div>
+  <h2 class="section-title">Recent Activity</h2>
+  <div class="card">
+   <div class="activity"><span>Account workspace preview</span><span>Demo</span></div>
+   <div class="activity"><span>Wallet interface preview</span><span>Demo</span></div>
+   <div class="activity"><span>Leadership interface preview</span><span>Demo</span></div>
+  </div>
+ </section>
+
+ <footer>© 2026 ReviewPulse · Real Feedback. Meaningful Work.</footer>
+</main>
+</div>
+</body>
+</html>
