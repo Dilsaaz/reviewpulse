@@ -65,8 +65,12 @@ a{color:#48d8f2;text-decoration:none}
 <script>
 document.getElementById("loginForm").addEventListener("submit",function(e){
   e.preventDefault();
-  document.getElementById("message").textContent =
-  "Login service is not connected yet. Secure account access will be enabled after backend setup.";
+   document.getElementById("message").textContent =
+"Opening dashboard preview...";
+
+setTimeout(function(){
+  window.location.href = "dashboard.html";
+}, 1000);
 });
 </script>
 </body>
